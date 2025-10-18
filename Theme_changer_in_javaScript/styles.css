@@ -1,0 +1,43 @@
+/* Basic visuals so you can see effect */
+body {
+  transition: background-color 250ms ease, color 250ms ease;
+  color: #111;
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+}
+
+/* theme classes that will be added to body */
+.theme-dark {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+.theme-light {
+  background-color: #f7f7f7;
+  color: #111;
+}
+
+/* dropdown style */
+#theme-dropdown {
+  margin-top: 0.5rem;
+  list-style: none;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  width: 120px;
+  background: white;
+  border-radius: 6px;
+}
+
+#theme-dropdown[hidden] {
+  display: none;
+}
+
+#theme-dropdown li {
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#theme-dropdown li:hover {
+  background: rgba(0,0,0,0.06);
+}
